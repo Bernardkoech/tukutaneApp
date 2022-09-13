@@ -5,13 +5,13 @@ function getImages() {
     .then(getImagesComments)
     .catch((err) => console.log("Addresses not found"));
 }
-  const getComments = () => {
-    fetch(commentsAddress)
-      .then((res) => res.json())
-      .then(myComments)
-      .catch((err) => console.log("Addresses not found"));
-  };
-  
+const getComments = () => {
+  fetch(commentsAddress)
+    .then((res) => res.json())
+    .then(myComments)
+    .catch((err) => console.log("Addresses not found"));
+};
+
   // Delete comments on click
   function deleteComment() {
     deleteText.addEventListener("click", function (e) {
