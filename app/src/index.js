@@ -1,10 +1,10 @@
 
 function getImages() {
-    fetch(imageAddress)
-      .then((response) => response.json())
-      .then(getImagesComments)
-      .catch((err) => console.log("Addresses not found"));
-  }
+  fetch(imageAddress)
+    .then((response) => response.json())
+    .then(getImagesComments)
+    .catch((err) => console.log("Addresses not found"));
+}
   const getComments = () => {
     fetch(commentsAddress)
       .then((res) => res.json())
